@@ -3,7 +3,7 @@ import { Markdown } from 'astro/components';
 ---
 <article>
     <div class="banner">
-        <p><strong>🧑‍🚀 Seasoned astronaut?</strong> Delete this file. Have fun!</p>
+        <p class="mb-0"><strong>🧑‍🚀 Seasoned astronaut?</strong> Delete this file. Have fun!</p>
     </div>
 
     <section>
@@ -27,6 +27,10 @@ import { Markdown } from 'astro/components';
 
             Astro looks for `.astro` or `.md` files in the `src/pages/` directory.
             Each page is exposed as a route based on its file name.
+
+            Install `hgrid-css` as a npm package with `npm i -D hgrid-css`. Change the file ending of `global.css` to `global.scss` and initialize hgrid at the top of the file: <pre><code>@use 'hgrid-css/sass/hgrid' with (
+            <span class="text-gray inline-block push30h">// config (see https://hgrid.io/documentation/integrate) for details</span>
+);</code></pre>
 
             There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
@@ -61,25 +65,5 @@ import { Markdown } from 'astro/components';
         padding: 1em 1.5em;
         padding-left: 0.75em;
         border-radius: 4px;
-    }
-
-    pre,
-    code {
-        font-family: var(--font-mono);
-        background: var(--color-light);
-        border-radius: 4px;
-    }
-
-    pre {
-        padding: 1em 1.5em;
-    }
-
-    .tree {
-        line-height: 1.2;
-    }
-
-    code:not(.tree) {
-        padding: 0.125em;
-        margin: 0 -0.125em;
     }
 </style>

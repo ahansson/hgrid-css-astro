@@ -1,0 +1,21 @@
+@use 'hgrid-css/sass/hgrid' with (
+  $use-article-link-underlines: true,
+  $turn-off-link-decoration: true,
+  $link-color: #d56aff,
+  $link-underline-color: #a53dce,
+  $container-max-width: 1600px,
+  $focus-border-color: #9cbe00,
+);
+
+body {
+  padding: 4rem 2rem;
+  display: grid;
+  justify-content: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111827;
+    color: #fff;
+  }
+}
