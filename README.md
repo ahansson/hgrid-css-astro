@@ -21,6 +21,10 @@ Inside of your Astro project, you'll see the following folders and files:
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
+Install `hgrid-css` as a npm package with `npm i -D hgrid-css`. Change the file ending of `global.css` to `global.scss` and initialize hgrid at the top of the file: <pre><code>@use 'hgrid-css/sass/hgrid' with (
+            <span class="text-gray inline-block push30h">// config (see https://hgrid.io/documentation/integrate for details)</span>
+);</code></pre>
+
 There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
 Any static assets, like images, can be placed in the `public/` directory.
