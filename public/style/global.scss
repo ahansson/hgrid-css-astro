@@ -1,6 +1,13 @@
 @use 'hgrid-css/sass/hgrid' with (
   $use-article-link-underlines: true,
   $turn-off-link-decoration: true,
+  $include-grid: false,
+  $include-fade: false,
+  $include-flash: false,
+  $include-rotate: false,
+  $include-scroll: false,
+  $include-spinner: false,
+  $include-transition: false,
   $link-color: #d56aff,
   $link-underline-color: #a53dce,
   $container-max-width: 1600px,
