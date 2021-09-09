@@ -4,6 +4,10 @@
   <img src="/public/assets/screenshot.png" alt="Screenshot" title="Screenshot">
 </p>
 
+## 📄 Hgrid Documentation
+
+[hgrid.io](https://hgrid.io)
+
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
