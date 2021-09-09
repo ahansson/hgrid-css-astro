@@ -1,5 +1,9 @@
 # Integrating [hgrid-css](https://github.com/ahansson/hgrid-css) in an [Astro](https://astro.build) project
 
+<p>
+  <img src="./assets/screenshot.png" alt="Screenshot" title="Screenshot">
+</p>
+
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
