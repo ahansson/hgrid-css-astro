@@ -6,7 +6,7 @@
 
 ## 📄 Hgrid Documentation
 
-[hgrid.io](https://hgrid.io)
+[https://hgrid.io/documentation/integrate/#astro](https://hgrid.io/documentation/integrate/#astro)
 
 ## 🚀 Project Structure
 
