@@ -8,6 +8,6 @@
   },
   "devDependencies": {
     "astro": "^0.17.2",
-    "hgrid-css": "^0.6.2-beta"
+    "hgrid-css": "^0.6.3-beta"
   }
 }
