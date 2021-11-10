@@ -7,7 +7,7 @@
     "build": "astro build"
   },
   "devDependencies": {
-    "astro": "^0.17.2",
-    "hgrid-css": "^0.6.3-beta"
+    "astro": "^0.20.12",
+    "hgrid-css": "^0.7.1-beta"
   }
 }

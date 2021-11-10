@@ -19,16 +19,51 @@ let title = 'My Astro Site';
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{ title }</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="stylesheet" href="/style/global.css">
-    <link rel="stylesheet" href="/style/home.css">
 
-    <style>
-        header {
-            display: flex;
-            flex-direction: column;
-            gap: 1em;
-            max-width: min(100%, 68ch);
+    <style global lang="scss">
+      @use '../style/global';
+      
+      :root {
+          --color-light: #F3F4F6;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+            --color-light: #1F2937;
         }
+      }
+    </style>
+    <style lang="scss">
+
+      header {
+
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        max-width: min(100%, 68ch);
+
+        > div {
+          font-size: clamp(2rem, -0.4742rem + 6.1856vw, 2.75rem);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        h1 {
+            font-size: 1em;
+            font-weight: 500;
+        }
+
+        img {
+            width: 2em;
+            height: 2.667em;
+        }
+      }  
+
+      h2 {
+          font-weight: 500;
+          font-size: clamp(1.5rem, 1rem + 1.25vw, 2rem);
+      }
+
     </style>
 </head>
 <body>
@@ -41,15 +76,6 @@ let title = 'My Astro Site';
         </header>
 
         <Tour />
-
-        <!--
-           - You can also use imported framework components directly in your markup!
-           -
-           - Note: by default, these components are NOT interactive on the client.
-           - The `:visible` directive tells Astro to make it interactive.
-           -
-           - See https://docs.astro.build/core-concepts/component-hydration/ 
-           -->
 
     </main>
 </body>
